@@ -273,8 +273,9 @@ class BinTreeNodeReader
         if ($input != null) {
             $this->input = $input;
         }
-        $stanzaFlag = ($this->peekInt8() & 0xF0) >> 4;
-        $stanzaSize = $this->peekInt16(1);
+        $firstByte = $this->peekInt8();
+        $stanzaFlag = ($firstByte & 0xF0) >> 4;
+        $stanzaSize = $this->peekInt16(1) | (($firstByte & 0x0F) << 16);
         if ($stanzaSize > strlen($this->input)) {
             throw new Exception("Incomplete message $stanzaSize != " . strlen($this->input));
         }
