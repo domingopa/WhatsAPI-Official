@@ -1,0 +1,103 @@
+===============================
+=         CLASSES MD5         =
+=         B64 ENCODED         =
+===============================
+
+WhatsApp/2.11.395 Android/4.3 Device/GalaxyS3
+P3b9TfNFCkkzPoVzZnm+BA==
+
+WhatsApp/2.11.394 Android/4.3 Device/GalaxyS3
+EkA+wIj+E8R7ncRihvTbJQ==
+
+WhatsApp/2.11.393 Android/4.3 Device/GalaxyS3
+39ykQ+QRBQ3V4y5u7qnqDA==
+
+WhatsApp/2.11.391 Android/4.3 Device/GalaxyS3
+08io6i/9AExMEsEar18G5w==
+
+WhatsApp/2.11.390 Android/4.3 Device/GalaxyS3
+ueXcdj5E56OZ0ABxU/YasQ==
+
+WhatsApp/2.11.388 Android/4.3 Device/GalaxyS3
+KSb52iVfhyJMXxuGse8avw==
+
+WhatsApp/2.11.383 Android/4.3 Device/GalaxyS3
+2IVWfReKm2m+1ORLg3gQtg==
+
+WhatsApp/2.11.382 Android/4.3 Device/GalaxyS3
+IJWjujh8Eds1Ew1pjWZWvg==
+
+WhatsApp/2.11.380 Android/4.3 Device/GalaxyS3
+b9ztDlCAK+k27UGaZkM7nw==
+
+WhatsApp/2.11.378 Android/4.3 Device/GalaxyS3       [*] 5 Sept 2014. PS.
+oCtjlSonS+4H16h9HW6nNA==
+
+WhatsApp/2.11.375 Android/4.3 Device/GalaxyS3
+ZLvs/rzS8qU90wZLE/1MgQ==
+
+WhatsApp/2.11.372 Android/4.3 Device/GalaxyS3
+eAaY/5A1G1nadV0TLtmdFQ==
+
+WhatsApp/2.11.371 Android/4.3 Device/GalaxyS3
+ScUKonjwWeLYhKqH8uV4HA==
+
+WhatsApp/2.11.365 Android/4.3 Device/GalaxyS3
+GUfilO0O5J4ZEMWcQKN7mg==
+
+WhatsApp/2.11.355 Android/4.3 Device/GalaxyS3
+w5mQTrb0Tky4s6Ln6RFMVQ==
+
+WhatsApp/2.11.354 Android/4.3 Device/GalaxyS3
+MPLa6ffv7Z/WNGS60PpxJQ==
+
+WhatsApp/2.11.348 Android/4.3 Device/GalaxyS3
+vszYr764HF2FQpdbqTdr/w==
+
+WhatsApp/2.11.339 Android/4.0.4 Device/GalaxyS3
+iV15qOB/jPIidogqfJ/oJA==
+
+WhatsApp/2.11.301 Android/4.3 Device/GalaxyS3
+pZ3J/O+F3HXOyx8YixzvPQ==
+
+WhatsApp/2.11.272 Android/4.0.4 Device/GalaxyS2
+kI6dipxOAk055AWZxknGqg==
+
+WhatsApp/2.11.264 Android/4.0.4 Device/GalaxyS2
+opf5/xMP2qdqHJ+7d4/LwA==
+
+WhatsApp/2.11.254 Android/4.0.4 Device/GalaxyS2
+ueKiLIlXuHtGzw2oxoZvfg==
+
+WhatsApp/2.11.224 Android/4.4.2 Device/GalaxyS4
+ZGdhtLiFqomD5ovSpQ+Odw==
+
+WhatsApp/2.11.209 Android/4.4.2 Device/GalaxyS4
++XW/7rCZDX9T7YrGQqTmcg==
+
+WhatsApp/2.11.200 Android/4.4.2 Device/GalaxyS4
+8PZch1s/VRHIKujxCxOXig==
+
+WhatsApp/2.11.151 Android/4.2.1 Device/GalaxyS3
+94bjoO7brhy/QJZRceJHYw==
+
+WhatsApp/2.11.144 Android/4.2.1 Device/GalaxyS3
+QtHrjQzwQjujOOOd1oObgQ==
+
+WhatsApp/2.11.139 Android/4.2.1 Device/GalaxyS3
+rzoCoMEYKQ6zoUWINKC9oQ==
+
+WhatsApp/2.11.134 Android/4.2.1 Device/GalaxyS3
+r4WQV17nVTl3+uFlF9mvEg==
+
+WhatsApp/2.11.125 Android/4.2.1 Device/GalaxyS3
+JqOGtSEKUWEu/jxzCB6Bdw==
+
+WhatsApp/2.11.113 Android/4.2.1 Device/GalaxyS3
+MOpsiNsR+nHEv0dFc3dqmA==
+
+WhatsApp/2.11.102 Android/4.2.1 Device/GalaxyS3
+zo7YXXvrrRqpikOi/CveTw==
+
+WhatsApp/2.11.69 Android/4.2.1 Device/GalaxyS3
+30CnAF22oY+2PUD5pcJGqw==
