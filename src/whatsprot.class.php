@@ -98,11 +98,11 @@ class WhatsProt
         $this->debug = $debug;
         $this->phoneNumber = $number;
         if (!$this->checkIdentity($identity)) {
-            //compute sha identity hash
+            //compute identity with pseudo_random_bytes
             $this->identity = $this->buildIdentity($identity);
         } else {
             //use provided identity hash
-            $this->identity = $identity;
+            $this->identity = file_get_contents($identity.'.dat');
         }
         $this->name = $nickname;
         $this->loginStatus = static::DISCONNECTED_STATUS;
@@ -1680,17 +1680,36 @@ class WhatsProt
     /**
      * Create an identity string
      *
-     * @param  string $identity A user string
+     * @param  string $identity File name where identity is going to be saved.
      * @return string           Correctly formatted identity
      */
     protected function buildIdentity($identity)
     {
-        return strtolower(urlencode(sha1($identity, true)));
+        if (file_exists($identity.".dat"))
+		{
+			return file_get_contents($identity.'.dat');
+		}
+		else
+		{
+			$id = fopen($identity.".dat", "w");
+			$bytes = "%".implode("%", str_split(strtoupper(bin2hex(openssl_random_pseudo_bytes(16))), 2));
+			fwrite($id, $bytes);
+			fclose($id);
+	
+			return $bytes;
+		}
     }
 
     protected function checkIdentity($identity)
     {
-        return (strlen(urldecode($identity)) == 20);
+    	if (file_exists($identity.".dat"))
+		{
+    		return (strlen(file_get_contents($identity.'.dat')) == 48);
+    	}
+    	else
+    	{
+    		return false;
+    	}
     }
 
     public function sendSync(array $numbers, $mode = "full", $context = "registration", $index = 0, $last = true)
