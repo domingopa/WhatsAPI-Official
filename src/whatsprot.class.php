@@ -415,7 +415,7 @@ class WhatsProt
           echo "\nUp to date :)\n\n";
         }
         else{
-          $classesMD5 = file_get_contents(base64_decode('aHR0cHM6Ly9tZ3AyNS5jb20vV0FUb2tlbi90ay5waHA='));
+          $classesMD5 = file_get_contents('https://mgp25.com/WAToken/WhatsApp.token');
 
           updateData('token.php', $WAver, $classesMD5);
           updateData('whatsprot.class.php', $WAver);
