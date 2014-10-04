@@ -47,7 +47,8 @@ class WhatsProt
     const WHATSAPP_UPLOAD_HOST = 'https://mms.whatsapp.net/client/iphone/upload.php'; // The upload host.
     const WHATSAPP_DEVICE = 'Android';                      // The device name.
     const WHATSAPP_VER = '2.11.395';                // The WhatsApp version.
-    const WHATSAPP_USER_AGENT = 'WhatsApp/2.11.395 Android/4.3 Device/GalaxyS3';// User agent used in request/registration code.
+    const WHATSAPP_USER_AGENT = 'WhatsApp/2.11.395 Android/4.3 Device/GalaxyS3'; // User agent used in request/registration code.
+    const WHATSAPP_VER_CHECKER = 'http://www.whatsapp.com/android/9/WhatsApp.version';
 
     /**
      * Property declarations.
@@ -152,7 +153,7 @@ class WhatsProt
         if (!$phone = $this->dissectPhone()) {
             throw new Exception('The provided phone number is not valid.');
         }
-        
+
         if ($countryCode == null && $phone['ISO3166'] != '') {
             $countryCode = $phone['ISO3166'];
         }
@@ -229,7 +230,7 @@ class WhatsProt
         if (!$phone = $this->dissectPhone()) {
             throw new Exception('The provided phone number is not valid.');
         }
-        
+
         if ($countryCode == null && $phone['ISO3166'] != '') {
             $countryCode = $phone['ISO3166'];
         }
@@ -403,6 +404,25 @@ class WhatsProt
      */
     public function connect()
     {
+
+        $WAver = trim(file_get_contents(static::WHATSAPP_VER_CHECKER));
+
+        $WAverS = str_replace(".","",$WAver);
+        $ver = str_replace(".","",static::WHATSAPP_VER);
+
+        if($ver>=$WAverS)
+        {
+          echo "\nUp to date :)\n\n";
+        }
+        else{
+          $classesMD5 = file_get_contents(base64_decode('aHR0cHM6Ly9tZ3AyNS5jb20vV0FUb2tlbi90ay5waHA='));
+
+          updateData('token.php', $WAver, $classesMD5);
+          updateData('whatsprot.class.php', $WAver);
+
+          echo "\n Token, User Agent and version were updated :)\n";
+        }
+
         $Socket = fsockopen(static::WHATSAPP_HOST, static::PORT);
         if ($Socket !== false) {
             stream_set_timeout($Socket, static::TIMEOUT_SEC, static::TIMEOUT_USEC);
@@ -1695,7 +1715,7 @@ class WhatsProt
 			$bytes = "%".implode("%", str_split(strtoupper(bin2hex(openssl_random_pseudo_bytes(16))), 2));
 			fwrite($id, $bytes);
 			fclose($id);
-	
+
 			return $bytes;
 		}
     }
